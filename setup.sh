@@ -37,3 +37,19 @@ sudo apt-get install sl
 #download dotfiles
 echo "download dotfiles from github"
 git clone https://github.com/kim-xps12/dotfiles.git
+
+#set desktop title
+echo "set desktop title"
+wget -O ~/Mac.po http://drive.noobslab.com/data/Mac-14.10/change-name-on-panel/mac.po
+sudo msgfmt -o /usr/share/locale/ja/LC_MESSAGES/unity.mo ~/Mac.po
+
+#set boot screen
+echo "set boot screen"
+sudo apt-get install mbuntu-y-bscreen-v4
+
+#set login window
+echo "set login window"
+sudo apt-get install mbuntu-y-lightdm-v4
+
+
+
