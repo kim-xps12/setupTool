@@ -3,40 +3,41 @@ echo "Start Setup ubunut for koumei"
 
 #add themes repository
 echo "add themes repository"
-sudo add-apt-repository ppa:noobslab/themes
-sudo apt-get update
-sudo apt-get install mbuntu-y-ithemes-v4
-sudo apt-get install mbuntu-y-icons-v4
-sudo apt-get install unity-tweak-tool
+sudo add-apt-repository ppa:noobslab/themes -y
+sudo apt-get update -y
+sudo apt-get install mbuntu-y-ithemes-v4 -y
+sudo apt-get install mbuntu-y-icons-v4 -y
+sudo apt-get install unity-tweak-tool -y
 
 #install slingscloud (launchpad)
 echo "install slingcloud (launchpad)"
-sudo add-apt-repository ppa:noobslab/apps
-sudo apt-get update
-sudo apt-get install slingscold
+sudo add-apt-repository ppa:noobslab/apps -y
+sudo apt-get update -y
+sudo apt-get install slingscold -y
 
 #install search-indicator
 echo "install search-indicator"
-sudo apt-get install indicator-synapse
+sudo apt-get install indicator-synapse -y
 
 #install docky (dock)
 echo "install docky (dock)"
-sudo add-apt-repository ppa:docky-core/ppa
-sudo apt-get update
-sudo apt-get install docky
-sudo apt-get install mbuntu-y-docky-skins-v4
+sudo add-apt-repository ppa:docky-core/ppa -y
+sudo apt-get update -y
+sudo apt-get install docky -y
+sudo apt-get install mbuntu-y-docky-skins-v4 -y
 
 #install tools
 echo "install vim"
-sudo apt-get install vim
+sudo apt-get install vim -y
 echo "install git"
-sudo apt-get install git
+sudo apt-get install git -y
 echo "install sl"
-sudo apt-get install sl
+sudo apt-get install sl -y
 
 #download dotfiles
 echo "download dotfiles from github"
 git clone https://github.com/kim-xps12/dotfiles.git
+git clone https://github.com/kim-xps12/.vim.git
 
 #set desktop title
 echo "set desktop title"
@@ -45,11 +46,9 @@ sudo msgfmt -o /usr/share/locale/ja/LC_MESSAGES/unity.mo ~/Mac.po
 
 #set boot screen
 echo "set boot screen"
-sudo apt-get install mbuntu-y-bscreen-v4
+sudo apt-get install mbuntu-y-bscreen-v4 -y
 
 #set login window
 echo "set login window"
-sudo apt-get install mbuntu-y-lightdm-v4
-
-
+sudo apt-get install mbuntu-y-lightdm-v4 -y
 
