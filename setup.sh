@@ -1,5 +1,7 @@
 #!/bin/sh
 echo "Start Setup ubunut for koumei"
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
 #add themes repository
 echo "add themes repository"
@@ -28,7 +30,7 @@ sudo apt-get install mbuntu-y-docky-skins-v4 -y
 
 #install tools
 echo "install vim"
-sudo apt-get install vim -y
+sudo apt-get install vim-gtk -y
 echo "install git"
 sudo apt-get install git -y
 echo "install sl"
