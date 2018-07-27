@@ -5,10 +5,10 @@ sudo apt-get upgrade -y
 
 #add themes repository
 echo "add themes repository"
-sudo add-apt-repository ppa:noobslab/themes -y
+sudo add-apt-repository ppa:noobslab/macbuntu -y
 sudo apt-get update -y
-sudo apt-get install mbuntu-y-ithemes-v4 -y
-sudo apt-get install mbuntu-y-icons-v4 -y
+sudo apt-get install macbuntu-os-icons-lts-v7 -y
+sudo apt-get install macbuntu-os-ithemes-lts-v -y
 sudo apt-get install unity-tweak-tool -y
 
 #install slingscloud (launchpad)
