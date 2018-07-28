@@ -8,7 +8,7 @@ echo "add themes repository"
 sudo add-apt-repository ppa:noobslab/macbuntu -y
 sudo apt-get update -y
 sudo apt-get install macbuntu-os-icons-lts-v7 -y
-sudo apt-get install macbuntu-os-ithemes-lts-v -y
+sudo apt-get install macbuntu-os-ithemes-lts-v7 -y
 sudo apt-get install unity-tweak-tool -y
 
 #install slingscloud (launchpad)
@@ -26,7 +26,6 @@ echo "install docky (dock)"
 sudo add-apt-repository ppa:docky-core/ppa -y
 sudo apt-get update -y
 sudo apt-get install docky -y
-sudo apt-get install mbuntu-y-docky-skins-v4 -y
 
 #install tools
 echo "install vim"
@@ -48,9 +47,9 @@ sudo msgfmt -o /usr/share/locale/ja/LC_MESSAGES/unity.mo ~/Mac.po
 
 #set boot screen
 echo "set boot screen"
-sudo apt-get install mbuntu-y-bscreen-v4 -y
+sudo apt-get install macbuntu-os-bscreen-lts-v7 -y
 
 #set login window
 echo "set login window"
-sudo apt-get install mbuntu-y-lightdm-v4 -y
+sudo apt-get install macbuntu-os-lightdm-lts-v7 -y
 
