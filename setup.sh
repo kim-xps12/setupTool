@@ -12,6 +12,9 @@ echo "install sl"
 sudo apt-get install sl -y
 echo "install tmux"
 sudo apt-get install tmux -y
+echo "install completion"
+sudo apt install bash-completion -y
+source /etc/bash_completion
 
 #download dotfiles
 echo "download dotfiles from github"
